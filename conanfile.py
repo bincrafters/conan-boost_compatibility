@@ -15,10 +15,4 @@ class BoostCompatibilityConan(ConanFile):
 
     def package(self):
         include_dir = src=os.path.join(os.getcwd(), self.lib_short_name, "include")
-        self.copy(pattern="*.h", dst="", src=include_dir)
-        self.copy(pattern="*.hpp", dst="", src=include_dir)
-        self.copy(pattern="*.ipp", dst="", src=include_dir)
-        
-    def package_info(self):
-        self.cpp_info.libs = [self.lib_short_name]
-
+        self.copy(pattern="*", dst="", src=include_dir)
