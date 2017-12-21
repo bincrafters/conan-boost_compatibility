@@ -3,16 +3,16 @@ from conans import ConanFile
 
 class BoostCompatibilityConan(ConanFile):
     name = "Boost.Compatibility"
-    version = "1.65.1"
+    version = "1.66.0"
     lib_short_names = ["compatibility"]
     is_header_only = True
 
     # BEGIN
 
     url = "https://github.com/bincrafters/conan-boost-compatibility"
-    description = "Please visit http://www.boost.org/doc/libs/1_65_1"
+    description = "Please visit http://www.boost.org/doc/libs/1_66_0"
     license = "www.boost.org/users/license.html"
-    build_requires = "Boost.Generator/1.65.1@bincrafters/testing"
+    build_requires = "Boost.Generator/1.66.0@bincrafters/testing"
     short_paths = True
     exports = "boostgenerator.py"
 
