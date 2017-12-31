@@ -3,10 +3,11 @@
 
 from conans import ConanFile, tools
 
+
 class BoostCompatibilityConan(ConanFile):
     name = "boost_compatibility"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-compatibility"
+    url = "https://github.com/bincrafters/conan-boost_compatibility"
     
     lib_short_names = ["compatibility"]
     is_header_only = True
