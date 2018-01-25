@@ -8,7 +8,8 @@ class BoostCompatibilityConan(ConanFile):
     name = "boost_compatibility"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_compatibility"
-    
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["compatibility"]
     is_header_only = True
 
