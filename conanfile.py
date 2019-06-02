@@ -4,11 +4,9 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.69.0@bincrafters/testing")
+base = python_requires("boost_base/2.0.0@bincrafters/testing")
+
 
 class BoostCompatibilityConan(base.BoostBaseConan):
     name = "boost_compatibility"
-    version = "1.69.0"
-    url = "https://github.com/bincrafters/conan-boost_compatibility"
-    lib_short_names = ["compatibility"]
-    header_only_libs = ["compatibility"]
+    version = "1.70.0"
